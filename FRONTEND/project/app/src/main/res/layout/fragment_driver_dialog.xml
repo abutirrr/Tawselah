@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".fragments.MainFragment.Driver.becomeDriverDialog.DriverDialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkGray"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/become_a_driver"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_margin="30dp"
+            android:textColor="@color/colorWhite"/>
+
+        <EditText
+            android:id="@+id/editTextCarModel"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="@string/car_model"
+            android:background="@drawable/shapewhite"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"/>
+        <EditText
+            android:id="@+id/editTextCarLicense"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="@string/car_license"
+            android:background="@drawable/shapewhite"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progress_bar_circular"
+                android:layout_marginTop="30dp"
+                android:theme="@style/AppTheme.WhiteAccent"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                />
+        <Button
+            android:id="@+id/buttonBecomeDriver"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/become_a_driver"
+           android:layout_weight="1"
+            android:layout_margin="30dp"
+            android:background="@drawable/shapewhite"
+            android:textColor="@color/colorBlack" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

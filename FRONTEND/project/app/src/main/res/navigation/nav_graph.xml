@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.abutirr.project.fragments.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUp_to_login"
+            app:destination="@id/login"
+            app:exitAnim="@anim/nav_default_pop_enter_anim"
+            app:popUpTo="@+id/login"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.abutirr.project.fragments.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_profileEdit"
+            app:destination="@id/profileEdit" />
+        <action
+            android:id="@+id/action_profileFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.abutirr.project.fragments.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_login_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileEdit"
+        android:name="com.abutirr.project.fragments.ProfileEdit"
+        android:label="fragment_profile_edit"
+        tools:layout="@layout/fragment_profile_edit" >
+        <action
+            android:id="@+id/action_profileEdit_to_profile"
+            app:destination="@id/profileFragment"
+            app:popUpTo="@+id/profileFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.abutirr.project.fragments.MainFragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_searchedTrips"
+            app:destination="@id/searchedTrips" />
+        <action
+            android:id="@+id/action_mainFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_login"
+            app:destination="@id/login"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/login"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchedTrips"
+        android:name="com.abutirr.project.fragments.MainFragment.Home.searchRecycle.SearchedTrips"
+        android:label="fragment_searched_trips"
+        tools:layout="@layout/fragment_searched_trips" >
+        <action
+            android:id="@+id/action_searchedTrips_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.abutirr.project.fragments.MainFragment.Home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/driverFragment"
+        android:name="com.abutirr.project.fragments.MainFragment.Driver.DriverFragment"
+        android:label="fragment_driver"
+        tools:layout="@layout/fragment_driver" >
+        <action
+            android:id="@+id/action_driverFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myRidesFragment"
+        android:name="com.abutirr.project.fragments.MainFragment.MyRides.MyRidesFragment"
+        android:label="fragment_my_rides"
+        tools:layout="@layout/fragment_my_rides" />
+    <fragment
+        android:id="@+id/driverDialogFragment"
+        android:name="com.abutirr.project.fragments.MainFragment.Driver.becomeDriverDialog.DriverDialogFragment"
+        android:label="fragment_driver_dialog"
+        tools:layout="@layout/fragment_driver_dialog" />
+    <fragment
+        android:id="@+id/dialogTripsFragment"
+        android:name="com.abutirr.project.fragments.MainFragment.Home.searchRecycle.DialogTripsFragment"
+        android:label="fragment_dialog_trips"
+        tools:layout="@layout/fragment_dialog_trips" />
+    <fragment
+        android:id="@+id/createRideFragment"
+        android:name="com.abutirr.project.fragments.MainFragment.Driver.CreateRideFragment.CreateRideFragment"
+        android:label="fragment_create_ride"
+        tools:layout="@layout/fragment_create_ride" />
+</navigation>

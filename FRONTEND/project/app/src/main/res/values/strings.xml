@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">project</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Tawselah">Tawselah </string>
+    <string name="user">Profile</string>
+    <string name="signOut">Sign Out</string>
+    <string name="search">Search</string>
+    <string name="rides">My Rides</string>
+    <string name="home">Home</string>
+    <string name="driver">Driver</string>
+    <string name="driver_name">Driver Name :</string>
+    <string name="car_model">Car Model :</string>
+    <string name="seats">Seats : </string>
+    <string name="price">Price</string>
+    <string name="become_a_driver">BECOME A DRIVER</string>
+    <string name="car_license">Car License :</string>
+    <string name="create_rides">Create Rides</string>
+    <string name="date">Date</string>
+    <string name="time">Time :</string>
+    <string name="user_name">User name</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
+    <string name="e_mail">Email</string>
+    <string name="password">Password</string>
+    <string name="gemder">Gender :</string>
+    <string name="gender">Gender :</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="date_of_birth">Date of birth :</string>
+    <string name="regisration">Regisration</string>
+    <string name="name">Name :</string>
+    <string name="type">Type :</string>
+    <string name="email">Email :</string>
+    <string name="phone_number">Phone number:</string>
+    <string name="confirm_password">Confirm password</string>
+
+    <string-array name="city">
+        <item>Select City</item>
+        <item>Amman</item>
+        <item>Aqaba</item>
+        <item>Irbed</item>
+        <item>Zarqa</item>
+        <item>Madaba</item>
+    </string-array>
+
+    <string-array name="seats">
+        <item>Select Seats</item>
+        <item>1 seat</item>
+        <item>2 seats</item>
+        <item>3 seats</item>
+        <item>4 seats</item>
+
+    </string-array>
+
+    <string-array name="price">
+        <item>Select Price</item>
+        <item>0.50</item>
+        <item>0.75</item>
+        <item>1.00</item>
+        <item>1.25</item>
+        <item>1.50</item>
+    </string-array>
+
+    <string-array name="pinAmman">
+        <item>Albalad</item>
+        <item>Shmesane</item>
+        <item>Abdon</item>
+        <item>Wehdat</item>
+    </string-array>
+
+    <string-array name="pinIrbed">
+        <item>Hashim hospital</item>
+
+    </string-array>
+
+    <string-array name="pinAqaba">
+        <item>Aqaba souq</item>
+
+    </string-array>
+
+    <string-array name="pinMadaba">
+        <item>Hay rashad</item>
+
+    </string-array>
+
+    <string-array name="pinZarqa">
+        <item>Bus station</item>
+
+    </string-array>
+</resources>

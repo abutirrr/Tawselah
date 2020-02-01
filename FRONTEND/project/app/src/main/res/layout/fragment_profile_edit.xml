@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.ProfileEdit">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backToProfileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:id="@+id/text_Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="@font/airstrike"
+            android:text="@string/Tawselah"
+            android:textColor="@color/colorYellow"
+            android:textSize="35dp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMain">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="10"
+                android:text="Edit profile"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="USER NAME :"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/userNameEditProfile"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="user"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textSize="17sp"
+                android:textColorHint="@color/colorDarkGray"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="EMAIL :"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/emailTextEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:autofillHints=""
+                android:background="@drawable/shapewhite"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="@string/e_mail"
+                android:importantForAutofill="yes"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="@color/colorDarkGray"
+                android:textColorHighlight="@color/colorDarkGray"
+                android:textColorHint="@color/colorDarkGray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD :"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/passwordTextEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapewhite"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="@string/password"
+                android:importantForAutofill="yes"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColor="@color/colorDarkGray"
+                android:textColorHighlight="@color/colorDarkGray"
+                android:textColorHint="@color/colorDarkGray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="REPASSWORD :"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/rePasswordTextEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapewhite"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="@string/confirm_password"
+                android:importantForAutofill="yes"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColor="@color/colorDarkGray"
+                android:textColorHighlight="@color/colorDarkGray"
+                android:textColorHint="@color/colorDarkGray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="PHONE NUMBER:"
+                android:textSize="17sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/phoneNumberTextEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:autofillHints=""
+                android:background="@drawable/shapewhite"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="Phone number"
+                android:importantForAutofill="yes"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/colorDarkGray"
+                android:textColorHighlight="@color/colorDarkGray"
+                android:textColorHint="@color/colorDarkGray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/date_of_birth"
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dateOfBirthTextEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="YYYY/MM/DD"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/updateProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_black"
+            android:text="Save"
+            android:textColor="@color/colorWhite" />
+
+        <ProgressBar
+            android:layout_marginTop="20dp"
+            android:id="@+id/progress_bar_circular"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:theme="@style/black" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
